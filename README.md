@@ -1,4 +1,6 @@
-# Assignment1
+# imt2681_assignment_01
+School Assignment for IMT2681 Cloud Technologies
+
 
 Hello!
 
