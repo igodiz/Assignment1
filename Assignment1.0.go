@@ -8,12 +8,12 @@ import (
 )
 
 type RepoInfo struct {
-	Project 		string 		`json:"full_name"`
-	Owner			OwnerStruct `json:"owner`
+	Project 	string 		`json:"full_name"`
+	Owner		OwnerStruct 	`json:"owner`
 	LanguagesUrl 	string		`json:"languages_url"`
 	ContributorsUrl string 		`json:"contributors_url"`
 	TopContributor	Contributor
-	Languages 		[]interface{}
+	Languages 	[]interface{}
 
 }
 
