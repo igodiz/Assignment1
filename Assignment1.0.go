@@ -8,21 +8,21 @@ import (
 )
 
 type RepoInfo struct {
-	Project 	string 		json:"full_name"
-	Owner		OwnerStruct 	json:"owner
-	LanguagesUrl 	string		json:"languages_url"
-	ContributorsUrl string 		json:"contributors_url"
+	Project 	string 		`json:"full_name"`
+	Owner		OwnerStruct 	`json:"owner"`
+	LanguagesUrl 	string		`json:"languages_url"`
+	ContributorsUrl string 		`json:"contributors_url"`
 	Languages 	[]interface{}
 	TopContributor	Contributor
 }
 
 type OwnerStruct struct {
-	Login string json:"login"
+	Login string `son:"login"`
 }
 
 type Contributor struct {
-	Login string json:"login"
-	Contributions int json:"contributions"
+	Login string `json:"login"`
+	Contributions int `json:"contributions"`
 }
 
 func getRepoInfo(w *http.ResponseWriter, r *http.Request, dest *RepoInfo) {
